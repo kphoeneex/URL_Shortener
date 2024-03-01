@@ -25,7 +25,6 @@ img {
 section.hero {
   height: 100vh;
   display:flex;
-  display: flex;
   align-items: center;
   justify-content: center;
 
@@ -35,11 +34,12 @@ section.hero > div {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin: 20vh;
+  margin: 10vh 5vw;
 }
 
 .container {
-    width: 400px;
+    width: 90%;
+    max-width: 400px;
     padding: 20px;
     background-color: #602c4eaf;
     border-radius: 10px;
@@ -101,4 +101,10 @@ section.hero > div {
   button:hover {
     background-color: #ff1f80;
     box-shadow: 1px 1px 5px rgb(255, 154, 215),-1px -1px 5px rgb(255, 154, 215);
+  }
+
+  @media only screen and (min-width: 768px) {
+    section.hero > div {
+      margin: 20vh auto;
+    }
   }
